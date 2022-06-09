@@ -1,9 +1,22 @@
 :root {
+  /* stadard */
+    --back-color: rgba(214, 231, 255, 0.849);
+    --div-color: blue;
+    --box-sh-color: green;
+    --font-color: green;
+    --link-color: yellow;
+    --hover-color: orange;
+    
+    --box-shadow: 5px 7px 12px 5px var(---box-sh-color);
+    
+    /* test
     --back-color: rgba(214, 231, 255, 0.849);
     --div-color: blue;
     --font-color: green;
     --link-color: yellow;
     --hover-color: orange;
+    #585292
+    */
 }
 
 body {
@@ -20,7 +33,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    box-shadow: 5px 7px 12px 5px #585292;
+    box-shadow: var(--box-shadow);
 }
 
 header img {
