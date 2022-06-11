@@ -1,10 +1,27 @@
 :root {
-    --hintergrund: rgba(214, 231, 255, 0.849);
+  /* stadard */
+    --back-color: rgba(214, 231, 255, 0.849);
+    --div-color: blue;
+    --box-sh-color: green;
+    --font-color: green;
+    --link-color: yellow;
+    --hover-color: orange;
+    
+    --box-shadow: 5px 7px 12px 5px var(--box-sh-color);
+    
+    /* test
+    --back-color: rgba(214, 231, 255, 0.849);
+    --div-color: blue;
+    --font-color: green;
+    --link-color: yellow;
+    --hover-color: orange;
+    #585292
+    */
 }
 
 body {
-    margin: 10px;
-    background-color: var(--hintergrund);
+    margin: 16px;
+    background-color: var(--back-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,7 +33,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    box-shadow: 5px 7px 12px 5px #585292;
+    box-shadow: var(--box-shadow);
 }
 
 header img {
@@ -35,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 5px 7px 12px 5px #585292;
+    box-shadow: var(--box-shadow);
 }
 
 nav a {
@@ -43,11 +60,11 @@ nav a {
     padding-right: 100px;
     font-weight: bold;
     text-decoration: none;
-    color: #585292;
+    color: var(--link-color);
 }
 
 nav a:hover {
-    color: #2f2c4e;
+    color: var(--back-color);
 }
 
 .main {
@@ -58,7 +75,7 @@ nav a:hover {
     background-color: none;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 7px 12px 5px #585292;
+    box-shadow: var(--box-shadow);
 }
 
 .main img {
@@ -76,5 +93,5 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: none;
-    box-shadow: 5px 7px 12px 5px #585292;
+    box-shadow: var(--box-shadow);
 }
