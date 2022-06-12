@@ -1,14 +1,12 @@
 :root {
-  /* stadard */
+    /* stadard */
     --back-color: rgba(214, 231, 255, 0.849);
     --div-color: blue;
     --box-sh-color: green;
     --font-color: green;
     --link-color: yellow;
     --hover-color: orange;
-    
     --box-shadow: 5px 7px 12px 5px var(--box-sh-color);
-    
     /* test
     --back-color: rgba(214, 231, 255, 0.849);
     --div-color: blue;
@@ -29,7 +27,8 @@ header {
     height: 250px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: none;
+    background-color: purple;
+    background-image: url(pics/castel_bgi_V1a.png);
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -39,8 +38,11 @@ header {
 header img {
     height: 100%;
     width: 100%;
+    filter: opacity(10%);
+    /*
     object-fit: cover;
     object-position: 50% 25%;
+    */
 }
 
 nav {
