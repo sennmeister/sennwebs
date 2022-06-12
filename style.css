@@ -1,9 +1,9 @@
 :root {
     /* stadard */
-    --back-color: rgba(214, 231, 255, 0.849);
-    --div-color: blue;
-    --box-sh-color: green;
-    --font-color: green;
+    --back-color: #3a4f6bd8;
+    --div-color: rgb(169, 210, 223);
+    --box-sh-color: rgb(224, 241, 255);
+    --font-color: black;
     --link-color: yellow;
     --hover-color: orange;
     --box-shadow: 5px 7px 12px 5px var(--box-sh-color);
@@ -19,6 +19,7 @@
 
 body {
     margin: 16px;
+    color: var(--font-color);
     background-color: var(--back-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -27,7 +28,7 @@ header {
     height: 250px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: purple;
+    background-color: var(--div-color);
     background-image: url(pics/castel_bgi_V1a.png);
     display: flex;
     justify-content: center;
@@ -45,6 +46,8 @@ header img {
     */
 }
 
+
+/* ganze Navigation in respo_nav.css 
 nav {
     background-color: none;
     height: 80px;
@@ -68,13 +71,14 @@ nav a {
 nav a:hover {
     color: var(--back-color);
 }
+*/
 
 .main {
     min-height: 1000px;
     max-width: 1000px;
     margin: auto;
     margin-top: 20px;
-    background-color: none;
+    background-color: var(--div-color);
     display: flex;
     justify-content: center;
     box-shadow: var(--box-shadow);
@@ -94,6 +98,6 @@ footer {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: none;
+    background-color: var(--div-color);
     box-shadow: var(--box-shadow);
 }
